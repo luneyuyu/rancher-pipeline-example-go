@@ -16,7 +16,7 @@ stages:
       buildContext: .
       tag: cicd-helloserver:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
-      registry: hub.didiyun.com/test-didiyun-1234567890/test-cicd
+      registry: hub.didiyun.com/test-didiyun-1234567890/cicd-helloserver
 - name: Deploy
   steps:
   - applyYamlConfig:

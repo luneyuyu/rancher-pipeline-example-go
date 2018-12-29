@@ -15,7 +15,8 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: cicd-helloserver:${CICD_EXECUTION_SEQUENCE}
-      registry: 127.0.0.1:34142
+      pushRemote: true
+      registry: hub.didiyun.com/test-didiyun-1234567890/test-cicd
 - name: Deploy
   steps:
   - applyYamlConfig:
